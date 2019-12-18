@@ -1,0 +1,11 @@
+<h1>Lets Count Nuber of words</h1>
+
+<a href="{% url 'aboutMe' %}"><b>Do you want to know me?</b></a>
+
+<br/><br/>
+<form action="{% url 'counts' %}">  
+    <textarea cols="40"  rows="10" name="fulltext"></textarea>
+    <br/><br/>
+    <input type="submit" value="count me"/>
+    
+</form>

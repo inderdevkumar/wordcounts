@@ -1,0 +1,25 @@
+
+
+<h1>Your Entered texts :</h1>
+{{full}}
+
+<h2>Total words in your text is: {{counting_words}}</h2>
+<a href="{% url 'home' %}"><b>Do you start again</b></a>
+
+<h2>Occurance of your text is as below:</h2>
+<b>{{counting}}</b>
+
+<h2>Sorted Words are:</h2>
+{% for  word, count in sorted %}
+{{word}}--{{count}}
+<br/>
+
+
+{% endfor %}
+<h2>Another way to count occurance of words:</h2>
+{% for  word, count in counting2 %}
+{{word}}--{{count}}
+<br/>
+
+
+{% endfor %}
